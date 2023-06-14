@@ -38,5 +38,6 @@ jobs:
         with:
           body_path: build_info.txt
           files: output_dir/*
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: asytumn/atf
